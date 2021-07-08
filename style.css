@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.main-box{
+    border-radius: 8px;
+    box-shadow: 0 0px 17px 0 rgb(122 118 118 / 58%);
+    border: 1px solid #c6c6c6!important;
+}
+
+/* left-side */
+.left-text-box{
+    color: #ffff;
+    min-height: 150px;
+}
+.left-text-box > h2{
+    font-size: 55px;
+}
+.left-text-box > small{
+    font-size: 12px;
+}
+
+
+.left-box{
+    background-color: #7d4da1;
+    border-radius: 8px;
+    
+
+
+}
+.left-inner-box{
+    background-color: #272147;
+    border-radius: 8px;
+    min-height: 200px;
+}
+
+/* right-side */
+
+
+.right-box-card{
+    border-radius: 8px !important;
+
+}
+/* table heading */
+.right-box-card > .card-header{
+    background-color: #7d4da1;
+    color: #ffff;
+    padding: 0.6rem 1rem !important;
+    display: flex;
+    border-top-right-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+}
+/* table */
+tbody, td, tr {
+    /* border-style: dashed !important; */
+    background-image: linear-gradient(to right, #d6d5d5 33%, rgba(255,255,255,0) 0%) !important;
+    background-position: bottom !important;
+    background-size: 18px 1px !important;
+    background-repeat: repeat-x;
+    border-color: none !important;
+    border-style: none !important;
+    border-width: 0;
+
+}
+tbody, td, tfoot, tr:last-child{
+    background-image:none !important;
+
+}
+/* media Query */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .left-box {
+        margin-bottom: 20px;
+    }
+    .right-box{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+}
+
+ 
