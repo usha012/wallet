@@ -9,8 +9,9 @@
 
 .main-box{
     border-radius: 8px;
-    box-shadow: 0 0px 17px 0 rgb(122 118 118 / 58%);
-    border: 1px solid #c6c6c6!important;
+    box-shadow: 0 0px 7px 0 rgb(156 156 156 / 58%);
+    /* border: 1px solid #c6c6c6!important; */
+    margin: 0px;
 }
 
 /* left-side */
