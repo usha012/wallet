@@ -74,7 +74,7 @@ tbody, td, tfoot, tr:last-child{
 }
 /* media Query */
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 900px) {
+@media (max-width: 766px) {
     .left-box {
         margin-bottom: 20px;
     }
@@ -84,7 +84,7 @@ tbody, td, tfoot, tr:last-child{
     }
 }
 /*Large devices (desktops, 992px and up) */
-@media (min-width: 991.98px) {
+@media (min-width: 767px) {
     .right-box{
         padding-left:20px !important;
         padding-right:20px !important;
