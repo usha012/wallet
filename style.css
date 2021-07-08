@@ -83,5 +83,12 @@ tbody, td, tfoot, tr:last-child{
         padding-left: 0px !important;
     }
 }
+/*Large devices (desktops, 992px and up) */
+@media (min-width: 991.98px) {
+    .right-box{
+        padding-left:20px !important;
+        padding-right:20px !important;
+    }
+}
 
  
