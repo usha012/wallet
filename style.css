@@ -11,7 +11,7 @@
     border-radius: 8px;
     box-shadow: 0 0px 7px 0 rgb(156 156 156 / 58%);
     /* border: 1px solid #c6c6c6!important; */
-    margin: 0px;
+    margin: 0px!important;
 }
 
 /* left-side */
@@ -74,7 +74,7 @@ tbody, td, tfoot, tr:last-child{
 }
 /* media Query */
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+@media (max-width: 900px) {
     .left-box {
         margin-bottom: 20px;
     }
