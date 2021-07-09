@@ -6,58 +6,102 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-.main-box{
+.container{ 
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     border-radius: 8px;
+    border: 1px solid #c6c6c6!important;
     box-shadow: 0 0px 7px 0 rgb(156 156 156 / 58%);
-    /* border: 1px solid #c6c6c6!important; */
-    margin: 0px!important;
+    width: 70%;
+    height: 400px;
+    padding: 30px;
+    
 }
-
-/* left-side */
+.left-box, .right-box {
+    display: inline-block;
+    box-sizing: border-box;
+}
+/* left-box */
+.left-box{
+    background-color: #7d4da1;
+    border-radius: 8px;
+    width: 35%;
+    float: left;
+    height:100%;
+    position: relative;
+}
 .left-text-box{
     color: #ffff;
-    min-height: 150px;
+    max-height: 150px;
+    text-align: left;
+    padding: 12px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.left-text-box > h6{
+    font-weight: 400;
+    font-size: 15px;
 }
 .left-text-box > h2{
     font-size: 55px;
 }
 .left-text-box > small{
     font-size: 12px;
-}
-
-
-.left-box{
-    background-color: #7d4da1;
-    border-radius: 8px;
-    
-
-
+    float: right;
 }
 .left-inner-box{
     background-color: #272147;
     border-radius: 8px;
-    min-height: 200px;
+    min-height: 189px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /* right-side */
+.right-box{
+    width: 65%;
+    float: left;
+    padding-left: 30px;
+    height: 300px;
 
-
+}
 .right-box-card{
     border-radius: 8px !important;
 
 }
+/* table */
+table{
+    /* border-collapse: collapse; */
+    table-layout: fixed;
+    width:100%;
+}
+.table1{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #c6c6c6;
+    border-top: none;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+}
 /* table heading */
-.right-box-card > .card-header{
+.right-box-card > .table-header{
     background-color: #7d4da1;
     color: #ffff;
-    padding: 0.6rem 1rem !important;
+    padding: 12px 15px;
     display: flex;
     border-top-right-radius: 8px !important;
     border-top-left-radius: 8px !important;
+    text-transform: capitalize;
 }
 /* table */
-tbody, td, tr {
+ td, tr {   
     /* border-style: dashed !important; */
     background-image: linear-gradient(to right, #d6d5d5 33%, rgba(255,255,255,0) 0%) !important;
     background-position: bottom !important;
@@ -66,29 +110,60 @@ tbody, td, tr {
     border-color: none !important;
     border-style: none !important;
     border-width: 0;
+    padding: 10px;
 
 }
-tbody, td, tfoot, tr:last-child{
+ td,tr:last-child{
     background-image:none !important;
 
 }
-/* media Query */
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 766px) {
-    .left-box {
-        margin-bottom: 20px;
-    }
-    .right-box{
-        padding-right: 0px !important;
-        padding-left: 0px !important;
-    }
-}
-/*Large devices (desktops, 992px and up) */
-@media (min-width: 767px) {
-    .right-box{
-        padding-left:20px !important;
-        padding-right:20px !important;
-    }
-}
 
- 
+/* media Query */
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 991px) { 
+    .container{
+        height: 636px;
+    }
+    .left-box {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+    .right-box {
+        width: 100%;
+        height: 221px;
+        padding: 0px;
+    }
+    td, tr {
+        padding: 9px;
+        font-size: 12px;
+     }
+ }
+
+ /* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container{
+        height: 495px;
+    }
+    .right-box-card > .table-header{
+        font-size: 13px;
+    }
+    td, tr {
+        font-size: 9px;
+     }
+    .left-text-box > h6 {
+        font-size: 12px;
+    }
+    .left-text-box > h2 {
+        font-size: 41px;
+    }
+    .left-text-box > small {
+        font-size: 9px;
+    }
+    .left-box {
+        height: 231px;
+    }
+    .left-inner-box {
+        min-height: 119px;
+    }
+}
